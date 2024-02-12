@@ -1,0 +1,6 @@
+{
+    "filterTypeAtoZ" : "Name (A to Z)",
+    "filterTypeZtoA" : "Name (Z to A)",
+    "filterTypePriceLtoH" : "Price (low to high)",
+    "filterTypePriceHtoL" : "Price (high to low)"
+}
