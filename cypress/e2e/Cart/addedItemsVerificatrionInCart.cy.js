@@ -15,13 +15,13 @@ describe('Dashbaord functionalities testing', { tags: 'Smoke' }, () => {
     login.signInButton();
     login.validateUrl();
 
-    dashbaord.addToCartSauceLabsBoltTShirt();
+    dashbaord.addToCartSauceLabsBikeLight();
     dashbaord.cartCountVerification();
-    dashbaord.addSauceLabsBikeLight();
-    dashbaord.getSauceLabsBikeLightPrice();
+    dashbaord.addToCartSauceLabsBoltTShirt()
     dashbaord.clickShoppingCart();
 
     cart.validateSauceLabsBikeLightPrice()
+    cart.validateSauceLabsBoltTShirtPrice()
 
   })
 })
