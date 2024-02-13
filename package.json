@@ -4,20 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run-all-testsSU": "npx cypress run --config-file cypress.configSU.js --reporter mochawesome",
-    "run-all-testsVU": "npx cypress run --config-file cypress.configVU.js --reporter mochawesome",
-    "run-all-testsPU": "npx cypress run --config-file cypress.configVU.js --reporter mochawesome",
-    "run-all-testsPGU": "npx cypress run --config-file cypress.configVU.js --reporter mochawesome",
-    "run-all-testsEU": "npx cypress run --config-file cypress.configVU.js --reporter mochawesome",
-    "clean-run-generateSU": "npm run clean-reports && npm run run-all-testsSU && npm run generate-mocha-reportSU",
-    "clean-reports": "rimraf cypress/mochawesome-report && rimraf cypress/screenshots",
-    "generate-mocha-reportSU": "marge cypress/mochawesome-report/mochawesome.json -f report -o cypress/mochawesome-report"
+    "run-all-tests": "npx cypress run --config-file cypress.config.js ",
+    "clean-reports": "rimraf cypress/reports && rimraf cypress/screenshots",
+    "clean-all-run": "npm run clean-reports && npm run run-all-tests"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^13.6.4",
+    "cypress-mochawesome-reporter": "^3.8.1",
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.3.0",
     "mochawesome-report-generator": "^6.2.0",
