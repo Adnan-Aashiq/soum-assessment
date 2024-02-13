@@ -3,7 +3,7 @@
 **Get Started**
 
 1. Clone this repository to your local machine.
-    - git clone `git@github.com:Adnan-Aashiq/soum-assessment.git`
+    - git clone `https://github.com/Adnan-Aashiq/soum-assessment.git`
 
 2. Install dependencies.
     - `npm install`
