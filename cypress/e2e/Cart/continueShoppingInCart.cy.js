@@ -8,7 +8,6 @@ const cart = new Cart()
 
 describe('Cart functionalities testing', { tags: 'Smoke' }, () => {
   it('Clicking on Continue Shopping button in Cart should redirects user to Dashboard Page', () => {
-    cy.viewport(1920,1080);
     
     login.visitUrl();
     login.standardUserLoginFromFixture();

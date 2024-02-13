@@ -6,7 +6,6 @@ const dashbaord = new Dashboard()
 
 describe('Filters testing', { tags: 'Smoke' }, () => {
   it('Validating Z to A sort filter is wiorking fine', () => {
-    cy.viewport(1920,1080);
     
     login.visitUrl();
     login.standardUserLoginFromFixture();

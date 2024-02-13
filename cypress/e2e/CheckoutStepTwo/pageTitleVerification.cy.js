@@ -12,7 +12,6 @@ const checkoutStepTwo = new CheckoutStepTwo()
 
 describe('Checkout Step Two Page functionalities testing', { tags: 'Regression' }, () => {
   it('Verify that the Checkout Step Two Page title should be (Checkout: Overview)', () => {
-    cy.viewport(1920,1080);
     
     login.visitUrl();
     login.standardUserLoginFromFixture();

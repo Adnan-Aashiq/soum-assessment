@@ -11,7 +11,6 @@ const checkoutstepone = new CheckoutStepOne()
 
 describe('Checkout Step One Page functionalities testing', { tags: 'Regression' }, () => {
   it('Verify after leaving all the fields blank & Clicking on Continue button on Checkout Step One Page application should through an error', () => {
-    cy.viewport(1920,1080);
     
     login.visitUrl();
     login.standardUserLoginFromFixture();

@@ -8,7 +8,6 @@ const cart = new Cart()
 
 describe('Cart Page functionalities testing', { tags: 'Regression' }, () => {
   it('Verify that the Cart Page title should be (Your Cart)', () => {
-    cy.viewport(1920,1080);
     
     login.visitUrl();
     login.standardUserLoginFromFixture();

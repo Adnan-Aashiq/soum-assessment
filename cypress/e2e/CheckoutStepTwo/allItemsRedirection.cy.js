@@ -10,7 +10,6 @@ const checkoutstepone = new CheckoutStepOne()
 
 describe('Checkout Step Two Page functionalities testing', { tags: 'Regression' }, () => {
   it('Clicking on All Items button on Checkout Step Two Page should redirects user to Dashboard', () => {
-    cy.viewport(1920,1080);
     
     login.visitUrl();
     login.standardUserLoginFromFixture();

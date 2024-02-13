@@ -15,7 +15,6 @@ const checkoutComplete = new CheckoutComplete()
 
 describe('Checkout Complete Page functionalities testing', { tags: 'Regression' }, () => {
   it('Clicking on Back Home button on Checkout Complete Page should redirects user to Dashboard', () => {
-    cy.viewport(1920,1080);
     
     login.visitUrl();
     login.standardUserLoginFromFixture();

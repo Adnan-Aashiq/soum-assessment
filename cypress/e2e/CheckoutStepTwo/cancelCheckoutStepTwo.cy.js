@@ -13,7 +13,6 @@ const checkoutStepTwo = new CheckoutStepTwo()
 
 describe('Checkout Step Two Page functionalities testing', { tags: 'Regression' }, () => {
   it('Clicking on Cancel button on Checkout Step Two Page should redirects user to Dashbaord', () => {
-    cy.viewport(1920,1080);
     
     login.visitUrl();
     login.standardUserLoginFromFixture();

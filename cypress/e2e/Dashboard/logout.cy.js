@@ -6,7 +6,6 @@ const dashbaord = new Dashboard()
 
 describe('Dashbaord functionalities testing', { tags: 'Smoke' }, () => {
   it('Validating Logout functionality is wiorking fine', () => {
-    cy.viewport(1920,1080);
     
     login.visitUrl();
     login.standardUserLoginFromFixture();

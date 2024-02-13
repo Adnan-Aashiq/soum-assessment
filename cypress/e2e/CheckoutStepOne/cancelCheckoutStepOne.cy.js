@@ -10,7 +10,6 @@ const checkoutstepone = new CheckoutStepOne()
 
 describe('Checkout Step One Page functionalities testing', { tags: 'Regression' }, () => {
   it('Clicking on Cancel button on Checkout Step One Page should redirects user to Cart', () => {
-    cy.viewport(1920,1080);
     
     login.visitUrl();
     login.standardUserLoginFromFixture();

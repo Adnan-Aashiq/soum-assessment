@@ -13,7 +13,6 @@ const checkoutStepTwo = new CheckoutStepTwo()
 
 describe('Checkout Step Two Page functionalities testing', { tags: 'Regression' }, () => {
   it('Verify Items total price should be equal to the sum of all the products added in the cart', () => {
-    cy.viewport(1920,1080);
     
     login.visitUrl();
     login.standardUserLoginFromFixture();

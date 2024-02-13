@@ -11,7 +11,6 @@ const checkoutstepone = new CheckoutStepOne()
 
 describe('Checkout Step One Page functionalities testing', { tags: 'Regression' }, () => {
   it('Verify after filling all the user info & Clicking on Continue button on Checkout Step One Page should redirects user to Checkout Step Two Page', () => {
-    cy.viewport(1920,1080);
     
     login.visitUrl();
     login.standardUserLoginFromFixture();

@@ -6,7 +6,6 @@ const dashbaord = new Dashboard()
 
 describe('Dashbaord functionalities testing', { tags: 'Smoke' }, () => {
   it('Add & Remove product from cart functionality testing', () => {
-    cy.viewport(1920,1080);
     
     login.visitUrl();
     login.standardUserLoginFromFixture();

@@ -15,7 +15,6 @@ const checkoutComplete = new CheckoutComplete()
 
 describe('Checkout Complete Page functionalities testing', { tags: 'Regression' }, () => {
   it('Verify that the Checkout Complete Page title should be (Thank you for your order!)', () => {
-    cy.viewport(1920,1080);
     
     login.visitUrl();
     login.standardUserLoginFromFixture();

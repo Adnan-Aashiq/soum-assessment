@@ -20,7 +20,7 @@ class Login {
    * Visits the Saucedemo website.
    */
   visitUrl() {
-    cy.visit('https://www.saucedemo.com/');
+    cy.visit('/');
   }
 
   /**
@@ -54,14 +54,11 @@ class Login {
   }
 
   /**
-   * Logs in with the standard user credentials from the provided fixture.
-   * @param {string} fixture - The fixture containing user details.
+   * Logs in with the standard user credentials from the provided in the config file.
    */
-  standardUserLoginFromFixture(fixture = 'users') {
-    cy.fixture(fixture).then((user) => {
-      this.inputUserName(user.standard_username);
-      this.inputPassword(user.password);
-    });
+  standardUserLoginFromFixture() {
+      this.inputUserName(Cypress.env('standard_username'));
+      this.inputPassword(Cypress.env('password'));
   }
 
   /**
