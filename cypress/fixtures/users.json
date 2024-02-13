@@ -1,4 +1,10 @@
 {
+  "standard_username": "standard_user",
+  "problem_username": "problem_user",
+  "performance_glitch_username": "performance_glitch_user",
+  "error_username": "error_user",
+  "visual_username": "visual_user",
   "locked_out_username": "locked_out_user",
-  "invalid_username" : "adnan_aashiq"
+  "invalid_username": "adnan_aashiq",
+  "password": "secret_sauce"
 }

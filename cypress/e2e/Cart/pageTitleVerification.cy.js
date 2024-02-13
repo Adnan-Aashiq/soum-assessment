@@ -10,7 +10,7 @@ describe('Cart Page functionalities testing', { tags: 'Regression' }, () => {
   it('Verify that the Cart Page title should be (Your Cart)', () => {
     
     login.visitUrl();
-    login.standardUserLoginFromFixture();
+    login.standardUserLoginFromFixture(Cypress.env('username'), Cypress.env('password'));
     login.signInButton();
     login.validateUrl();
 

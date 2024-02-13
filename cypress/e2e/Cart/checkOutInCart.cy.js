@@ -10,7 +10,7 @@ describe('Cart functionalities testing', { tags: 'Smoke' }, () => {
   it('Clicking on Checkout button in Cart should redirects user to checkout-step-one Page', () => {
     
     login.visitUrl();
-    login.standardUserLoginFromFixture();
+    login.standardUserLoginFromFixture(Cypress.env('username'), Cypress.env('password'));
     login.signInButton();
     login.validateUrl();
 

@@ -28,7 +28,7 @@ class Login {
    * @param {string} usernameinput - The username to be input.
    */
   inputUserName(usernameinput) {
-    return cy.get(this.username).clear().type(usernameinput);
+    cy.get(this.username).clear().type(usernameinput);
   }
 
   /**
@@ -36,7 +36,7 @@ class Login {
    * @param {string} paramPassword - The password to be input.
    */
   inputPassword(paramPassword) {
-    return cy.get(this.password).clear().type(paramPassword);
+    cy.get(this.password).clear().type(paramPassword);
   }
 
   /**
@@ -54,11 +54,14 @@ class Login {
   }
 
   /**
-   * Logs in with the standard user credentials from the provided in the config file.
+   * Logs in with the standard user credentials from the provided fixture.
+   * @param {string} fixture - The fixture containing user details.
    */
-  standardUserLoginFromFixture() {
-      this.inputUserName(Cypress.env('username'));
-      this.inputPassword(Cypress.env('password'));
+  standardUserLoginFromFixture(fixture = 'users') {
+    cy.fixture(fixture).then((user) => {
+      this.inputUserName(user.standard_username);
+      this.inputPassword(user.password);
+    });
   }
 
   /**
@@ -68,7 +71,7 @@ class Login {
   lockedUserLoginFromFixture(fixture = 'users') {
     cy.fixture(fixture).then((user) => {
       this.inputUserName(user.locked_out_username);
-      this.inputPassword(Cypress.env('password'));
+      this.inputPassword(user.password);
     });
   }
 
@@ -79,7 +82,7 @@ class Login {
   invalidUserLoginFromFixture(fixture = 'users') {
     cy.fixture(fixture).then((user) => {
       this.inputUserName(user.invalid_username);
-      this.inputPassword(Cypress.env('password'));
+      this.inputPassword(user.password);
     });
   }
 

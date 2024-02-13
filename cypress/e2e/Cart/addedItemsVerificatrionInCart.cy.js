@@ -10,7 +10,7 @@ describe('Dashbaord functionalities testing', { tags: 'Smoke' }, () => {
   it('Add & Remove product from cart functionality testing', () => {
     
     login.visitUrl();
-    login.standardUserLoginFromFixture();
+    login.standardUserLoginFromFixture(Cypress.env('username'), Cypress.env('password'));    ;
     login.signInButton();
     login.validateUrl();
 

@@ -8,7 +8,7 @@ describe('CartPage functionalities testing', { tags: 'Regression' }, () => {
   it('Clicking on All Items button on Cart Page should redirects user to Dashboard', () => {
     
     login.visitUrl();
-    login.standardUserLoginFromFixture();
+    login.standardUserLoginFromFixture(Cypress.env('username'), Cypress.env('password'));
     login.signInButton();
     login.validateUrl();
 
