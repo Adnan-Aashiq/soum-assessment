@@ -6,7 +6,7 @@
     - git clone `git@github.com:Adnan-Aashiq/soum-assessment.git`
 
 2. Install dependencies.
-    - `npm install` ``
+    - `npm install`
 
 3. Run Cypress tests.
 
