@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run-all-tests": "npx cypress run --config-file cypress.config.js ",
+    "open-cypress-runner":"npx cypress open --config-file cypress.config.js ",
+    "run-all-tests": "npx cypress run --config-file cypress.config.js",
     "clean-reports": "rimraf cypress/reports && rimraf cypress/screenshots",
     "clean-all-run": "npm run clean-reports && npm run run-all-tests"
   },
