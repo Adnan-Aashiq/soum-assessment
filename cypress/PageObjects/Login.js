@@ -57,7 +57,7 @@ class Login {
    * Logs in with the standard user credentials from the provided in the config file.
    */
   standardUserLoginFromFixture() {
-      this.inputUserName(Cypress.env('standard_username'));
+      this.inputUserName(Cypress.env('username'));
       this.inputPassword(Cypress.env('password'));
   }
 
@@ -68,7 +68,7 @@ class Login {
   lockedUserLoginFromFixture(fixture = 'users') {
     cy.fixture(fixture).then((user) => {
       this.inputUserName(user.locked_out_username);
-      this.inputPassword(user.password);
+      this.inputPassword(Cypress.env('password'));
     });
   }
 
@@ -79,7 +79,7 @@ class Login {
   invalidUserLoginFromFixture(fixture = 'users') {
     cy.fixture(fixture).then((user) => {
       this.inputUserName(user.invalid_username);
-      this.inputPassword(user.password);
+      this.inputPassword(Cypress.env('password'));
     });
   }
 

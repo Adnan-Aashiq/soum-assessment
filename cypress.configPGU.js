@@ -6,7 +6,7 @@ module.exports = defineConfig({
   "chromeWebSecurity": false,
 
   env: {
-    "sername": "standard_user",
+    "username": "performance_glitch_user",
     "password" : "secret_sauce"
   },
   e2e: {
